@@ -1,1 +1,150 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+/* Body and General Text Styling */
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+}
+
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none; /* Override potential uppercase from theme */
+    margin-bottom: 1rem;
+    color: #222;
+    font-weight: 700;
+}
+
+h3.uppercase, h4.uppercase, h5.uppercase, h6.uppercase {
+    text-transform: none !important; /* Attempt to override forced uppercase */
+}
+
+/* Specific adjustments for headings */
+/* The main name "Shiyang Fei" */
+section.bg-primary div.inline-block h3 { /* Assuming this is specific enough */
+    font-size: 2.5rem;
+}
+
+/* The tagline "Not Only a Software Engineer" */
+section.bg-primary div.inline-block h5 { /* Assuming this is specific enough */
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Profile Image Styling */
+.inline-block.image-small {
+    border-radius: 50%;
+    border: 3px solid #007bff; /* Using the blog accent color */
+    padding: 3px; /* Optional: to create a small space between image and border */
+}
+
+/* Section titles (e.g., "Welcome to My Digital Space", "Employment") */
+section.bg-primary h4.uppercase { /* This selector was used in previous subtask for section titles successfully */
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* Content Section Styling */
+section.bg-primary {
+    background-color: #fff !important; /* Override navy theme */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+/* The very first section with the name and profile picture */
+body > div.main-container > section.bg-primary:first-of-type {
+    background-color: #eef !important; /* A slightly different light color for the top section */
+}
+
+/* Quote Styling */
+/* The Steve Jobs quote. Target based on current HTML structure (pt240 then row) */
+div.pt240.pt-xs-80 + .row p.lead.fade-half {
+    font-style: italic;
+    color: #777;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* The "--Steve Jobs" part */
+div.pt240.pt-xs-80 + .row p.lead.fade-half + p.lead.fade-half {
+    text-align: center;
+    font-size: 1rem;
+    color: #888;
+}
+
+/* p.fade-half Styling */
+p.fade-half {
+    color: #555 !important; /* Ensure sufficient contrast */
+    opacity: 1 !important; /* Override theme's opacity if it's causing issues */
+}
+
+/* "Employment" and "Education" Entry Styling */
+.employment-entry, .education-entry {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff; /* White background for entries */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.employment-entry hr, .education-entry hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 1.5rem 0;
+}
+
+.employment-entry h5, .education-entry h5 {
+    font-size: 1.3rem;
+    color: #007bff; /* A blog-like accent color for titles */
+}
+
+.employment-entry p, .education-entry p {
+    font-size: 0.95rem;
+    color: #444; /* Darker grey for entry text */
+}
+
+/* Contact Section Styling */
+/* Targeting h6 within the contact section */
+section.contact-section .row .col-sm-10.col-md-8 h6.uppercase {
+    font-size: 1rem;
+}
+
+/* Background for the contact section using the new class */
+section.contact-section {
+    background-color: #f5f5f5 !important;
+}
+
+
+/* Footer Styling */
+footer.footer-1 {
+    background-color: #333 !important; /* Dark grey footer */
+    color: #ccc; /* Light text color for footer */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer.footer-1 a.back-to-top {
+    color: #fff;
+    background-color: #555; /* Darker button for back-to-top */
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+footer.footer-1 a.back-to-top:hover {
+    background-color: #007bff; /* Accent color on hover */
+}
